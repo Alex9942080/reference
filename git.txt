@@ -1,0 +1,17 @@
+	# - делаем полное клонирование (все ветки) -
+git clone --mirror https://github.com/brenns10/lsh.git
+	# - идем в папку -
+cd lsh.git/
+	# - смотрим 
+git remote show origin
+	# - отвязываем 
+git remote rm origin
+	# - смотрим, можно не деоать (проверяем что отвязали) 
+git remote show origin
+	# - добавляем новый гит (подключаем)
+git remote add origin https://github.com/Alex9942080/lsr.git
+	# - отправляем в подключенный репозиторий 
+git push origin --all
+	# - отправляем теги тудаже 
+git push --tags
+
